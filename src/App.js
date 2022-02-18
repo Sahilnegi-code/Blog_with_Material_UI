@@ -1,25 +1,77 @@
-import logo from './logo.svg';
+import {Container, Grid, makeStyles } from "@material-ui/core"
+import {featuredPosts , sidebar} from './Data/data'
+import Header from "./components/Header";
+import FeaturedPost from "./components/FeaturedPost";
+
+import { createTheme } from '@mui/material/styles';
 import './App.css';
+import PostCard from "./components/PostCard";
+import Sidebar from './components/Sidebar';
+import Mainbar from './components/Mainbar';
+import { style } from "@mui/system";
+import Footer from './components/Footer.js';
+
+
+
+
+const useStyles = makeStyles((theme)=>({
+
+  mainGrid:{
+    marginTop : theme.spacing(5)
+  }
+
+}))
+    
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
 
+  const darkTheme = createTheme(
+{
+
+  palette : {
+    type:"dark"
+  }
+
+}
+  )
+
+  const classes = useStyles();
+  
+  return(
+    <>
+    <Container style ={{minWidth:'700px'}}>
+    <Header />
+    <FeaturedPost />
+    <br/>
+    <Grid container spacing= {2}>
+      {
+        featuredPosts.map((post)=>{
+          console.log(post.title);
+          return <PostCard    post ={post} key={post.title} />
+        })
+      }
+    </Grid>
+
+    
+ <Grid container spacing = {4} className={classes.mainGrid}>
+    
+ <Sidebar props = {sidebar}/>
+  <Mainbar title = " From the firehorse "/>
+
+ </Grid>
+ </Container>
+ <Footer 
+ title = "Footer"
+ description = "Something here to give the footer a purpose"
+
+ />
+    
+   
+    
+
+    </>
+  )
+}
 export default App;
+
