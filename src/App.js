@@ -2,8 +2,6 @@ import {Container, Grid, makeStyles } from "@material-ui/core"
 import {featuredPosts , sidebar} from './Data/data'
 import Header from "./components/Header";
 import FeaturedPost from "./components/FeaturedPost";
-
-import { createTheme } from '@mui/material/styles';
 import './App.css';
 import PostCard from "./components/PostCard";
 import Sidebar from './components/Sidebar';
