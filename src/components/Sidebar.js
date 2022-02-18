@@ -32,30 +32,34 @@ function Sidebar({props}) {
         
             return (
                
-                <>
-                <Link
+               
+                <Link 
                 display="block"
                 variant = "body1"
                 href={archive.url}
                 key = {archive.title}
                 >
+
                 {
-                    archive.title
+
+                       archive.title
+                  
                 }
+
                 </Link>
         
-                </>
+                
             )            
         })
         }
         
-        <Typography variant= "h6" gutterBottom>
+        <Typography variant= "h6" gutterBottom  >
         Social
         </Typography>
         {
             social.map((network)=>{
                 return(
-                    <Link>
+                    <Link key ={network.name}>
                     <Grid container spacing={1} alignItems ="center" >
                       <Grid item>
                         <network.icon/>

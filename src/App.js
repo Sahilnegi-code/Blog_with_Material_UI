@@ -56,7 +56,7 @@ function App() {
     
  <Grid container spacing = {4} className={classes.mainGrid}>
     
- <Sidebar props = {sidebar}/>
+ <Sidebar props = {sidebar} />
   <Mainbar title = " From the firehorse "/>
 
  </Grid>

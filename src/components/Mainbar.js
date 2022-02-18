@@ -9,7 +9,7 @@ const Mainbar = ({title}) => {
 
       
       <Grid item xs = {12} md = {8}>
-      <Typography variant="h6" gutterbottom>
+      <Typography variant="h6" gutterBottom>
       {title}
       </Typography>
 
