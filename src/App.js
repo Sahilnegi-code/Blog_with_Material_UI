@@ -30,7 +30,7 @@ function App() {
   
   return(
     <>
-    <Container style ={{minWidth:'600px'}}>
+    <Container style ={{minWidth:'100px'}}>
     <Header />
     <FeaturedPost />
     <br/>
@@ -51,17 +51,17 @@ function App() {
 
  </Grid>
  </Container>
+ 
  <Footer 
- title = "Footer"
- description = "Something here to give the footer a purpose"
+title = "Footer"
+description = "Something here to give the footer a purpose"
 
- />
-    
-   
-    
+/>
 
-    </>
-  )
+ 
+ 
+ </>
+ )
 }
 export default App;
 

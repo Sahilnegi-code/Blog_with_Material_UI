@@ -7,7 +7,7 @@ const Footer = ({title,description}) => {
    
     return (
     <>
-      <footer   style={{backgroundColor:'grey',height:'150px',paddingTop:'32px',minWidth:'600px'}}>
+      <footer   style={{backgroundColor:'grey',height:'150px',paddingTop:'32px'}}>
     <Container >
         <Typography variant="h6" align="center" gutterBottom >
         {title}
