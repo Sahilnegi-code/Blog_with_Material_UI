@@ -8,7 +8,7 @@ import './App.css';
 import PostCard from "./components/PostCard";
 import Sidebar from './components/Sidebar';
 import Mainbar from './components/Mainbar';
-import { style } from "@mui/system";
+
 import Footer from './components/Footer.js';
 
 
