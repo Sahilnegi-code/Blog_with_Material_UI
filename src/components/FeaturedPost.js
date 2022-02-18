@@ -23,14 +23,14 @@ const FeaturedPost = () => {
 
     return (
         <>
-        <Card className= {classes.cover} >
-        <CardContent  >
+        <Card className= {classes.cover}  >
+        <CardContent  style ={{maxHeight:'400px'}}>
         <p className ={classes.title}  >
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, quasi!
         </p>
-        <Typography variant = "h6" style ={{color:'grey',height:'100px' }}>
+        <Typography variant = "h6" style ={{color:'grey' }}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda unde, rem architecto atque quo hic provident nesciunt explicabo tenetur illum?
-        !
+        ! hello
         </Typography>
         </CardContent>
         

@@ -30,7 +30,7 @@ function App() {
   
   return(
     <>
-    <Container style ={{minWidth:'700px'}}>
+    <Container style ={{minWidth:'600px'}}>
     <Header />
     <FeaturedPost />
     <br/>
