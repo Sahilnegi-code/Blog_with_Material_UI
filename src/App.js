@@ -26,15 +26,7 @@ const useStyles = makeStyles((theme)=>({
 
 function App() {
 
-  const darkTheme = createTheme(
-{
-
-  palette : {
-    type:"dark"
-  }
-
-}
-  )
+ 
 
   const classes = useStyles();
   

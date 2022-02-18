@@ -20,7 +20,7 @@ cover:{
 
 const FeaturedPost = () => {
     const classes = useStyles() ;
-    console.log(classes.title);
+
     return (
         <>
         <Card className= {classes.cover} >
